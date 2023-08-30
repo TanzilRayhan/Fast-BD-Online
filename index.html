@@ -8,10 +8,14 @@
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <style>
-        .poppins{
+        .poppins {
             font-family: 'Poppins', sans-serif;
+        }
+        .orange{
+            color: #F8991D;
         }
     </style>
     <!-- tailwind -->
@@ -19,54 +23,104 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="max-w-6xl mx-auto poppins">
+<body class="poppins">
     <header>
         <!-- nav -->
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Item 1</a></li>
-                  <li>
-                    <a>Parent</a>
-                    <ul class="p-2">
-                      <li><a>Submenu 1</a></li>
-                      <li><a>Submenu 2</a></li>
+        <nav class=" bg-[#006690]">
+            <div class="navbar max-w-6xl mx-auto">
+                <div class="navbar-start ">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <!-- <li>
+                                <a>Parent</a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li> -->
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Packages</a></li>
+                            <li><a>Solutions</a></li>
+                            <li><a>Offers</a></li>
+                        </ul>
+                    </div>
+                    <img class="w-60" src="./Images/Logo.png" alt="">
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-white">
+                        <!-- <li tabindex="0">
+                            <details>
+                                <summary>Parent</summary>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </details>
+                        </li> -->
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Packages</a></li>
+                        <li><a>Solutions</a></li>
+                        <li><a>Offers</a></li>
                     </ul>
-                  </li>
-                  <li><a>Item 3</a></li>
-                </ul>
-              </div>
-              <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn btn-ghost bg-[#F8991D]">Contact</a>
+                </div>
             </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a>Item 1</a></li>
-                <li tabindex="0">
-                  <details>
-                    <summary>Parent</summary>
-                    <ul class="p-2">
-                      <li><a>Submenu 1</a></li>
-                      <li><a>Submenu 2</a></li>
-                    </ul>
-                  </details>
-                </li>
-                <li><a>Item 3</a></li>
-              </ul>
+        </nav>
+
+        <!-- banner -->
+        <div class="hero min-h-fit lg:min-h-[500px]"
+            style="background-image: url(./Images/Cables.jpg);">
+            <div class="hero-overlay bg-opacity-60">
+                <div class="max-w-6xl text-center mx-auto text-white p-5 lg:mt-32">
+                    <h1 class="mb-5 text-xl lg:text-7xl font-bold"><span class="orange">IPv6</span> READY</h1>
+                    <h1 class="mb-5 text-base lg:text-5xl font-semibold">Connecting the World</h1>
+                    <button class="btn btn-ghost w-30 lg:w-60 rounded-full bg-[#F8991D] lg:text-lg">GET A CONNECTION</button>
             </div>
-            <div class="navbar-end">
-              <a class="btn">Button</a>
             </div>
-          </div>
+        </div>
     </header>
     <main>
 
     </main>
-    <footer>
-
+    <footer class="bg-[#006690] ">
+        <footer class="footer px-10 lg:px-0 max-w-6xl mx-auto pt-10  text-white text-base-content">
+            <div class="flex justify-center items-center">
+                <img class="w-40" src="./Images/logo fast bd-01.png" alt="">
+            </div> 
+            <div>
+              <span class="footer-title">Services</span> 
+              <a class="link link-hover">Branding</a> 
+              <a class="link link-hover">Design</a> 
+              <a class="link link-hover">Marketing</a> 
+              <a class="link link-hover">Advertisement</a>
+            </div> 
+            <div>
+              <span class="footer-title">Company</span> 
+              <a class="link link-hover">About us</a> 
+              <a class="link link-hover">Contact</a> 
+              <a class="link link-hover">Jobs</a> 
+              <a class="link link-hover">Press kit</a>
+            </div> 
+            <div>
+              <span class="footer-title">Legal</span> 
+              <a class="link link-hover">Terms of use</a> 
+              <a class="link link-hover">Privacy policy</a> 
+              <a class="link link-hover">Cookie policy</a>
+            </div>
+          </footer>
+          <h1 class="text-white text-center py-5">© Fast BD Online 2023. All rights reserved.</h1>
     </footer>
 </body>
 
