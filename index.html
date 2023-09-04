@@ -48,14 +48,15 @@
                                     <li><a>Submenu 2</a></li>
                                 </ul>
                             </li> -->
-                            <li><a href="#">Home</a></li>
+                            <li><a href="#home">Home</a></li>
                             <li><a href="#about">About</a></li>
                             <li><a>Packages</a></li>
                             <li><a>Solutions</a></li>
                             <li><a>Offers</a></li>
                         </ul>
                     </div>
-                    <img class="w-60" src="./Images/Logo.png" alt="">
+                    <a href="#home"><img class="w-60" src="./Images/Logo.png" alt=""></a>
+
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 text-white">
@@ -68,7 +69,7 @@
                                 </ul>
                             </details>
                         </li> -->
-                        <li><a href="#">Home</a></li>
+                        <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#">Packages</a></li>
                         <li><a href="#">Solutions</a></li>
@@ -82,7 +83,7 @@
         </nav>
 
         <!-- banner -->
-        <div class="hero min-h-fit lg:min-h-[500px]" style="background-image: url(./Images/Cables.jpg);">
+        <div id=home class="hero min-h-fit lg:min-h-[500px]" style="background-image: url(./Images/Cables.jpg);">
             <div class="hero-overlay bg-opacity-60">
                 <div class="max-w-6xl text-center  mx-auto text-white p-5 lg:mt-32">
                     <h1 class="pt-16 text-xl lg:text-7xl font-bold"><span class="orange">IPv6</span> READY</h1>
@@ -113,8 +114,8 @@
     <main>
 
         <!-- Services -->
-        <section>
-            <div class="hero min-h-fit lg:min-h-[400px] bg-white">
+        <section id="services">
+            <div class="hero min-h-fit lg:min-h-[400px] bg-white mb-20">
                 <div class="">
                     <div class="max-w-6xl flex-col lg:flex-row mx-auto text-[#006690] p-5">
                         <div class=" py-10">
@@ -122,7 +123,113 @@
                             <h1 class="mb-5 lg:text-lg font-light">Join today to take advantage of Fast BD Internet's
                                 great features.</h1>
                         </div>
-                        <div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                            <div class="card w-full bg-[#006690] shadow-inner text-white">
+                                <figure class="px-10 pt-10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="81" viewBox="0 0 80 81"
+                                        fill="none">
+                                        <path
+                                            d="M10 40.5L16.6667 33.75M16.6667 33.75L40 10.125L63.3333 33.75M16.6667 33.75V67.5C16.6667 68.3951 17.0179 69.2536 17.643 69.8865C18.2681 70.5194 19.1159 70.875 20 70.875H30M63.3333 33.75L70 40.5M63.3333 33.75V67.5C63.3333 68.3951 62.9821 69.2536 62.357 69.8865C61.7319 70.5194 60.8841 70.875 60 70.875H50M30 70.875C30.8841 70.875 31.7319 70.5194 32.357 69.8865C32.9821 69.2536 33.3333 68.3951 33.3333 67.5V54C33.3333 53.1049 33.6845 52.2465 34.3096 51.6135C34.9348 50.9806 35.7826 50.625 36.6667 50.625H43.3333C44.2174 50.625 45.0652 50.9806 45.6904 51.6135C46.3155 52.2465 46.6667 53.1049 46.6667 54V67.5C46.6667 68.3951 47.0179 69.2536 47.643 69.8865C48.2681 70.5194 49.1159 70.875 50 70.875M30 70.875H50"
+                                            stroke="white" stroke-width="5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title">Home Broadband Internet</h2>
+                                    <p>FastBD Online is providing one of
+                                        the fastest broadband internet
+                                        and network solutions
+                                        throughout Chittagong, reliable for
+                                        both gamers and regular users.</p>
+                                </div>
+                            </div>
+                            <div class="card w-full bg-[#006690] shadow-inner text-white">
+                                <figure class="px-10 pt-10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="82" height="81" viewBox="0 0 82 81"
+                                        fill="none">
+                                        <path
+                                            d="M71.75 44.7356C61.98 48.6379 51.5384 50.6377 41 50.625C30.1248 50.625 19.7483 48.5325 10.25 44.7356M54.6667 20.25V13.5C54.6667 11.7098 53.9467 9.9929 52.6652 8.72703C51.3837 7.46116 49.6456 6.75 47.8333 6.75H34.1667C32.3544 6.75 30.6163 7.46116 29.3348 8.72703C28.0533 9.9929 27.3333 11.7098 27.3333 13.5V20.25M41 40.5H41.0342M17.0833 67.5H64.9167C66.729 67.5 68.4671 66.7888 69.7486 65.523C71.0301 64.2571 71.75 62.5402 71.75 60.75V27C71.75 25.2098 71.0301 23.4929 69.7486 22.227C68.4671 20.9612 66.729 20.25 64.9167 20.25H17.0833C15.271 20.25 13.5329 20.9612 12.2514 22.227C10.9699 23.4929 10.25 25.2098 10.25 27V60.75C10.25 62.5402 10.9699 64.2571 12.2514 65.523C13.5329 66.7888 15.271 67.5 17.0833 67.5Z"
+                                            stroke="white" stroke-width="5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title">Corporate/SME Internet</h2>
+                                    <p>Offering dedicated internet connection with various network solutions ensuring
+                                        network stability for our Corporate and SME consumers. Along with a support
+                                        manager for 24/7 response.</p>
+                                </div>
+                            </div>
+                            <div class="card w-full bg-[#006690] shadow-inner text-white">
+                                <figure class="px-10 pt-10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="81" viewBox="0 0 80 81"
+                                        fill="none">
+                                        <path
+                                            d="M70 40.5C70 48.556 66.8393 56.2819 61.2132 61.9784C55.5871 67.6748 47.9565 70.875 40 70.875M70 40.5C70 32.444 66.8393 24.718 61.2132 19.0216C55.5871 13.3252 47.9565 10.125 40 10.125M70 40.5H10M40 70.875C32.0435 70.875 24.4129 67.6748 18.7868 61.9784C13.1607 56.2819 10 48.556 10 40.5M40 70.875C45.5233 70.875 50 57.2737 50 40.5C50 23.7263 45.5233 10.125 40 10.125M40 70.875C34.4767 70.875 30 57.2737 30 40.5C30 23.7263 34.4767 10.125 40 10.125M40 10.125C32.0435 10.125 24.4129 13.3252 18.7868 19.0216C13.1607 24.718 10 32.444 10 40.5"
+                                            stroke="white" stroke-width="5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title">Dedicated Internet</h2>
+                                    <p>Dedicated high-speed internet connectivity with multiple upstream support and
+                                        multiple backup links to ensure 99.9% uptime.</p>
+                                </div>
+                            </div>
+
+                            <div class="card w-full bg-[#006690] shadow-inner text-white">
+                                <figure class="px-10 pt-10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="82" height="80" viewBox="0 0 82 80"
+                                        fill="none">
+                                        <path
+                                            d="M13.6666 53.3333V56.6666C13.6666 59.3187 14.7465 61.8623 16.6688 63.7377C18.591 65.613 21.1982 66.6666 23.9166 66.6666H58.0833C60.8018 66.6666 63.4089 65.613 65.3311 63.7377C67.2534 61.8623 68.3333 59.3187 68.3333 56.6666V53.3333M54.6666 26.6666L41 13.3333M41 13.3333L27.3333 26.6666M41 13.3333V53.3333"
+                                            stroke="white" stroke-width="5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title">Network Solutions</h2>
+                                    <p>FastBD Online provides both LAN & WAN networks solutions. With the help of our
+                                        experienced network engineers, we ensure the most efficient Network solutions
+                                        for our clients.</p>
+                                </div>
+                            </div>
+                            <div class="card w-full bg-[#006690] shadow-inner text-white">
+                                <figure class="px-10 pt-10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="81" height="80" viewBox="0 0 81 80"
+                                        fill="none">
+                                        <path
+                                            d="M34.8469 14.39C36.2846 8.53667 44.7154 8.53667 46.1531 14.39C46.3688 15.2693 46.7917 16.0859 47.3874 16.7733C47.9831 17.4607 48.7346 17.9995 49.581 18.3458C50.4273 18.6921 51.3444 18.8362 52.2578 18.7662C53.1711 18.6963 54.0548 18.4143 54.837 17.9433C60.0446 14.81 66.0083 20.6967 62.8358 25.8433C62.3595 26.6155 62.0745 27.4878 62.0039 28.3892C61.9332 29.2907 62.0789 30.1959 62.4292 31.0313C62.7794 31.8666 63.3242 32.6086 64.0195 33.1968C64.7147 33.7851 65.5406 34.203 66.4301 34.4167C72.3566 35.8367 72.3566 44.1633 66.4301 45.5833C65.5398 45.7964 64.713 46.2141 64.017 46.8024C63.321 47.3907 62.7755 48.133 62.4249 48.9688C62.0742 49.8047 61.9284 50.7106 61.9992 51.6126C62.07 52.5147 62.3555 53.3875 62.8324 54.16C66.0049 59.3033 60.0446 65.1933 54.8336 62.06C54.0518 61.5897 53.1686 61.3082 52.2559 61.2384C51.3432 61.1686 50.4267 61.3125 49.5808 61.6584C48.735 62.0043 47.9838 62.5425 47.3882 63.2291C46.7926 63.9157 46.3694 64.7315 46.1531 65.61C44.7154 71.4633 36.2846 71.4633 34.8469 65.61C34.6312 64.7307 34.2083 63.9141 33.6126 63.2267C33.0169 62.5393 32.2654 62.0005 31.419 61.6542C30.5727 61.3079 29.6556 61.1638 28.7422 61.2338C27.8289 61.3037 26.9452 61.5857 26.163 62.0567C20.9554 65.19 14.9917 59.3033 18.1642 54.1567C18.6405 53.3845 18.9255 52.5122 18.9961 51.6108C19.0668 50.7093 18.9211 49.8041 18.5708 48.9687C18.2206 48.1334 17.6758 47.3914 16.9805 46.8032C16.2853 46.2149 15.4594 45.797 14.5699 45.5833C8.64337 44.1633 8.64337 35.8367 14.5699 34.4167C15.4602 34.2036 16.287 33.7859 16.983 33.1976C17.679 32.6093 18.2245 31.867 18.5751 31.0312C18.9258 30.1953 19.0716 29.2894 19.0008 28.3874C18.93 27.4853 18.6445 26.6125 18.1676 25.84C14.9951 20.6967 20.9554 14.8067 26.1664 17.94C29.5279 19.9667 33.9154 18.1733 34.8469 14.39Z"
+                                            stroke="white" stroke-width="5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M50.625 40C50.625 42.6522 49.5583 45.1957 47.6595 47.0711C45.7607 48.9464 43.1853 50 40.5 50C37.8147 50 35.2393 48.9464 33.3405 47.0711C31.4417 45.1957 30.375 42.6522 30.375 40C30.375 37.3478 31.4417 34.8043 33.3405 32.9289C35.2393 31.0536 37.8147 30 40.5 30C43.1853 30 45.7607 31.0536 47.6595 32.9289C49.5583 34.8043 50.625 37.3478 50.625 40Z"
+                                            stroke="white" stroke-width="5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title">CCTV System Solutions</h2>
+                                    <p>FastBD Online provides high end CCTV and IP surveillance solutions to
+                                        residential, commercial, and industrial customers in Bangladesh.</p>
+                                </div>
+                            </div>
+                            <div class="card w-full bg-[#006690] shadow-inner text-white">
+                                <figure class="px-10 pt-10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80"
+                                        fill="none">
+                                        <path
+                                            d="M32.5 56.6667L30 66.6667L26.6667 70H53.3333L50 66.6667L47.5 56.6667M10 43.3333H70M16.6667 56.6667H63.3333C65.1014 56.6667 66.7971 55.9643 68.0474 54.714C69.2976 53.4638 70 51.7681 70 50V16.6667C70 14.8986 69.2976 13.2029 68.0474 11.9526C66.7971 10.7024 65.1014 10 63.3333 10H16.6667C14.8986 10 13.2029 10.7024 11.9526 11.9526C10.7024 13.2029 10 14.8986 10 16.6667V50C10 51.7681 10.7024 53.4638 11.9526 54.714C13.2029 55.9643 14.8986 56.6667 16.6667 56.6667Z"
+                                            stroke="white" stroke-width="5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </figure>
+                                <div class="card-body items-center text-center">
+                                    <h2 class="card-title">Network Security</h2>
+                                    <p>FastBD Online provides VPN, Antivirus, CCTV IP surveillance solutions ensuring
+                                        top of the line security to your end.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -138,10 +245,10 @@
                         <div class="max-w-2xl py-10">
                             <h1 class="mb-5 text-xl lg:text-5xl font-bold">About Fast<span
                                     class="text-[#F8991D]">BD</span> Online</h1>
-                            <h1 class="mb-5 text-base lg:text-lg font-light">Fast BD Internet has started its operation
+                            <h1 class="mb-5 text-base lg:text-lg font-light">FastBD Online has started its operation
                                 in the year 2005 with
                                 the commitment of quality internet service at an affordable price.
-                                At the time of commencement Fast BD Internet started with
+                                At the time of commencement FastBD Online started with
                                 broadband service with the state of art technology.</h1>
                         </div>
                         <div>
@@ -158,7 +265,7 @@
                 <div>
                     <div
                         class="max-w-6xl flex justify-center items-center flex-col-reverse lg:flex-row mx-auto text-[#006690] p-5">
-                        <div class="max-w-xl py-10">
+                        <div class="max-w-2xl pr-10 py-10">
                             <h1 class="mb-5 text-xl lg:text-5xl font-bold">Contact Us</h1>
                             <h1 class="mb-5 lg:text-lg font-light">If you would like to find out more about how we can
                                 help you,
@@ -170,7 +277,7 @@
                             </h3>
                         </div>
                         <div>
-                            <img class="  w-60 lg:w-96" src="./Images/Contact.png" alt="">
+                            <img class=" w-60 lg:w-96" src="./Images/Contact.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -192,7 +299,8 @@
                         <path
                             d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
                         </path>
-                    </svg></a>
+                    </svg>
+                </a>
             </div>
             <div class="pt-5">
                 <p>Copyright © 2023 - All right reserved</p>
